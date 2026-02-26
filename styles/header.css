@@ -1,20 +1,24 @@
 header {
-  padding-block: 32px;
-
   font: var(--text-md);
 }
 
 header .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   flex-direction: column;
 }
 
+
 #profile {
   display: flex;
+<<<<<<< HEAD
   gap: 32px;
   flex-direction: column;
+=======
+  flex-direction: column;
+  max-width: 375px;
+>>>>>>> 380c1bf6f153f4072357a74346f6d5fe1d96751e
 
   & img {
     width: 120px;
@@ -35,6 +39,63 @@ header .container {
   margin-bottom: 8px;
 }
 
+
+
+#info {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: .25rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  width: 280px;
+}
+
+#info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+
+
+
+
+@media (width >= 80em) {
+
+header .container {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+#profile {
+display: flex;
+flex-direction: row;
+gap: 2rem;
+
+    & img {
+      width: 176px;
+      height: 176px;
+    }
+  }
+
+.infos-isa {
+  
+}
+
+.nome {
+display: flex;
+flex-direction: row;
+}
+
+.paragrafo {
+  max-width: 384px;
+}
+
 #info {
   list-style: none;
   display: flex;
@@ -48,6 +109,7 @@ header .container {
   display: flex;
   align-items: center;
   gap: 8px;
+<<<<<<< HEAD
   margin-left: -.5rem;
 }
 
@@ -87,3 +149,20 @@ header .container {
   width: 280px;
 }
 }
+=======
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 380c1bf6f153f4072357a74346f6d5fe1d96751e
