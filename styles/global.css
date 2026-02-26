@@ -38,6 +38,22 @@ a:hover {
 }
 
 .container {
+  max-width: 375px;
+  margin: 1rem;
+
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 80em) {
+ 
+.container {
   padding-inline: 32px;
   max-width: 1280px;
   margin-inline: auto; 
@@ -46,3 +62,9 @@ a:hover {
 .bg-surface-color {
   background-color: var(--surface-color);
 }
+
+.desktop-only {
+  display: initial;
+}
+}
+

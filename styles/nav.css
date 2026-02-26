@@ -4,6 +4,35 @@ nav {
   align-items: center;
 
   line-height: 0;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+
+  padding-block: 8px;
+}
+
+nav ul li:last-child img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
+
+
+@media (width >= 80em) {
+  nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  line-height: 0;
   padding-block: 20px;
 }
 
@@ -19,5 +48,6 @@ nav ul {
 nav ul li:last-child img {
   width: 40px;
   height: 40px;
+}
 }
 
