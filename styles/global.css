@@ -38,11 +38,28 @@ a:hover {
 }
 
 .container {
-  padding-inline: 32px;
-  max-width: 1280px;
-  margin-inline: auto; 
+  margin: 1rem .5rem; 
 }
 
 .bg-surface-color {
   background-color: var(--surface-color);
+}
+
+.desktop-only {
+  display: none;
+}
+
+.phone-only {
+  display: initial;
+}
+
+@media (width >= 80em) {
+  .desktop-only {
+    display: initial;
+  }
+
+  .container {
+  max-width: 1280px;
+  margin-inline: auto;
+  }
 }
